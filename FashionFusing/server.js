@@ -2,9 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
 import connectDB from './config/mongodb.js';
-
 import clouding from './config/clouding.js';
 import userRouter from './routes/UserRouts.js';
+import productRouter from './routes/productRouts.js';
+
 
 
 
@@ -22,9 +23,11 @@ clouding();
 // middleware
 app.use(cors());
 app.use(express.json());
-
+ 
 // api end points
 app.use('/api/user',userRouter);
+app.use('/api/product',productRouter);  
+
 
 
 // api routes or api end points
