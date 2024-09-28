@@ -1,9 +1,8 @@
 {
-  "name": "fashionfusing",
+  "name": "fashionfusing-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "type": "module",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -13,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+   
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.5.0",
     "cors": "^2.8.5",

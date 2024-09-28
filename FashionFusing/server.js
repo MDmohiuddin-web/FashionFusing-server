@@ -34,4 +34,3 @@ app.use('/api/product',productRouter);
 app.get('/', (req, res) => res.status(200).send('FashionFusing server is running'));
 
 app.listen(port, () => console.log(`listening on localhost: ${port}`));
-
